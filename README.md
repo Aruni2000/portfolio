@@ -13,7 +13,6 @@ Hey there! I'm **Aruni Nethmini** and this is my portfolio built using **React, 
 Doing so makes it better for everyone here on this platform and respects what everyone has made. **Please be you and make yourself unique from the rest!** ✨
 
 <hr/>
-<a href="https://www.buymeacoffee.com/aruninethmini" target="_blank"><img src="./public/static/misc/buy-me-a-coffee.svg" alt="Buy Me A Coffee: @AruniNethmini" width="160"></a>&nbsp;
-<a href="https://paypal.me/aruninethmini" target="_blank"><img src="./public/static/misc/paypal.svg" alt="PayPal: @AruniNethmini" width="160"></a>
+
 <br/>
 <p>Thank you so much for your support. 💙</p>
