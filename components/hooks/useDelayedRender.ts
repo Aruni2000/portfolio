@@ -1,4 +1,3 @@
-// src/components/hooks/useDelayedRender.ts
 import { useState, useEffect } from "react";
 
 interface UseDelayedRenderOptions {

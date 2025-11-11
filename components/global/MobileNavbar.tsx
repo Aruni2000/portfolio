@@ -7,10 +7,11 @@ import { useDelayedRender } from '@/components/hooks/useDelayedRender';
 
 export default function MobileNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
- const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
+const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
   isMenuOpen,
   { enterDelay: 20, exitDelay: 300 }
 );
+
 
   function toggleMenu() {
     if (isMenuOpen) {
