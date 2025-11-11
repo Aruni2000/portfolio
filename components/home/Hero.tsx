@@ -8,15 +8,15 @@ function Hero() {
         className="relative heroElem w-full pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center z-1"
         style={{ maxWidth: "1200px" }}
       >
-        <p className="text-xl mb-5"> Pasindu Rathnathilake</p>
+        <p className="text-xl mb-5"> Aruni Nthmini</p>
         <h1 className="heroTitle inline-block max-w-2xl lg:max-w-4xl  w-auto relative text-3xl md:text-4xl lg:text-5xl tracking-tighter mb-10 font-bold heroShinyBg">
-          Focused on  <span className="heroShiny1 text-fun-pink">developing</span> and{" "}
-          <span className="heroShiny2 text-fun-pink">designing seamless</span> mobile experiences.
+         Turning <span className="heroShiny1 text-fun-pink">creativity </span> into functional{" "}
+          <span className="heroShiny2 text-fun-pink">high-performance</span> digital experiences.
           
           <img
             className="sqD squiggle-hero-html w-16 top-[-90px] right-[5%] sm:top-[-90px] sm:right-[170px]"
             style={{ animationDelay: "0.1s" }}
-            src="/static/doodles/hero/html.svg"
+            // src="/static/doodles/hero/html.svg"
           />
           <img
             className="sqD squiggle-hero-nextjs hidden top-[75px] right-0 w-11"
@@ -50,7 +50,7 @@ function Hero() {
           />
           <img
             className="sqD squiggle-hero-pop1 hidden sm:block sm:top-[-130px] sm:left-[15%] lg:top-[-130px] lg:left-[120px]"
-            src="/static/doodles/hero/pop1.svg"
+            // src="/static/doodles/hero/pop1.svg"
           />
           <img
             className="sqD left-[-35px] bottom-[-85px] sm:bottom-[-100px] sm:left-5 opacity-40"
