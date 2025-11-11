@@ -2,17 +2,15 @@ import { useEffect, useState } from "react";
 
 import Link from "next/link";
 import {routes} from "@/data/global";
-import useDelayedRender from "use-delayed-render";
+import { useDelayedRender } from '@/components/hooks/useDelayedRender';
+
 
 export default function MobileNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
-    isMenuOpen,
-    {
-      enterDelay: 20,
-      exitDelay: 300,
-    }
-  );
+ const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
+  isMenuOpen,
+  { enterDelay: 20, exitDelay: 300 }
+);
 
   function toggleMenu() {
     if (isMenuOpen) {

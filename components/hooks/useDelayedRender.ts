@@ -1,12 +1,32 @@
-import { useState, useEffect } from 'react';
+// src/components/hooks/useDelayedRender.ts
+import { useState, useEffect } from "react";
 
-export function useDelayedRender(delay: number = 100) {
-  const [show, setShow] = useState(false);
+interface UseDelayedRenderOptions {
+  enterDelay?: number;
+  exitDelay?: number;
+}
+
+export function useDelayedRender(
+  mounted: boolean,
+  { enterDelay = 0, exitDelay = 0 }: UseDelayedRenderOptions = {}
+) {
+  const [rendered, setRendered] = useState(mounted);
 
   useEffect(() => {
-    const t = setTimeout(() => setShow(true), delay);
-    return () => clearTimeout(t);
-  }, [delay]);
+    let enterTimeout: NodeJS.Timeout;
+    let exitTimeout: NodeJS.Timeout;
 
-  return show;
+    if (mounted) {
+      enterTimeout = setTimeout(() => setRendered(true), enterDelay);
+    } else {
+      exitTimeout = setTimeout(() => setRendered(false), exitDelay);
+    }
+
+    return () => {
+      clearTimeout(enterTimeout);
+      clearTimeout(exitTimeout);
+    };
+  }, [mounted, enterDelay, exitDelay]);
+
+  return { mounted, rendered };
 }
