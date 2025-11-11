@@ -3,7 +3,11 @@ import { useRouter } from "next/router";
 import React from "react";
 import { routes } from "@/data/global";
 
-function Navbar() {
+interface NavbarProps {
+  currentPage: string; // add this
+}
+
+const Navbar: React.FC<NavbarProps> = ({ currentPage }) => {
   const router = useRouter();
   const pathname = router.pathname; // current URL path
 
@@ -34,7 +38,7 @@ function Navbar() {
           <li
             key={index}
             className={`list-none text-white ${
-              pathname === item.path
+              pathname === item.path || currentPage === item.title
                 ? "opacity-100"
                 : "opacity-40 hover:opacity-100 transition-opacity"
             }`}
@@ -45,6 +49,6 @@ function Navbar() {
       </ul>
     </nav>
   );
-}
+};
 
 export default Navbar;

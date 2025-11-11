@@ -1,12 +1,10 @@
-module.exports = {
-    swcMinify: true,
-    async redirects() {
-        return [
-          {
-            source: '/blog',
-            destination: '/',
-            permanent: true,
-          },
-        ]
-      },
+/** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === "production";
+
+const nextConfig = {
+  output: "export",
+  basePath: isProd ? "/my_portfolio" : "",
+  trailingSlash: true
 };
+
+module.exports = nextConfig;
