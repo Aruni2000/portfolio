@@ -6,8 +6,7 @@
     "export": "next export",
     "deploy": "next build && next export",
     "start": "next start",
-    "serve": "next serve",
-    "vercel-build": "npm install --legacy-peer-deps && npm run build"
+    "serve": "next serve"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
