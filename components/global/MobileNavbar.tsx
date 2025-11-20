@@ -11,8 +11,6 @@ const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
   isMenuOpen,
   { enterDelay: 20, exitDelay: 300 }
 );
-
-
   function toggleMenu() {
     if (isMenuOpen) {
       setIsMenuOpen(false);

@@ -22,8 +22,6 @@ function Heading() {
       <p className="text-gray-500 text-lg sm:text-xl leading-relaxed mb-4">
         Passionate designer skilled in creating impactful visuals and scalable design systems.from branding and social media to responsive web dashboards — using Figma, Adobe Illustrator, AI tools, Next.js, Tailwind CSS, and TypeScript. Experienced in React, Next.js, Node.js, and MongoDB with a focus on performance, accessibility, and security.
       </p>
-
-  
     </div>
   );
 }
