@@ -85,12 +85,6 @@ export const footer: Footer = {
           icon: "/static/icons/linkedin-f.svg",
           leavesWebsite: true,
         },
-        // {
-        //   name: "Dribbble",
-        //   link: "https://dribbble.com/braydentw",
-        //   icon: "/static/icons/dribbble-f.svg",
-        //   leavesWebsite: true,
-        // },
         {
           name: "Fiverr",
           link: "https://www.fiverr.com/s/WEKQRyE",
@@ -107,8 +101,8 @@ export const footer: Footer = {
     },
   ],
   support: {
-    buymeacoffee: "braydenw",
-    paypal: "braydentw",
+    buymeacoffee: "aruninethmini",
+    paypal: "aruninethmini",
     message: "I appreciate your support very much! 💙",
   },
 };
